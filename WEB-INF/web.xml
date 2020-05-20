@@ -1,0 +1,26 @@
+<web-app>
+	<servlet>
+		<servlet-name>servletMensaje</servlet-name>
+		<servlet-class>MostrarMensaje</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>servletSumarGet</servlet-name>
+		<servlet-class>SumarDatosMetodoGet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>servletSumarPost</servlet-name>
+		<servlet-class>SumarDatosMetodoPost</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletMensaje</servlet-name>
+		<url-pattern>/mensaje</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servletSumarGet</servlet-name>
+		<url-pattern>/sumarget</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servletSumarPost</servlet-name>
+		<url-pattern>/sumarpost</url-pattern>
+	</servlet-mapping>
+</web-app>
